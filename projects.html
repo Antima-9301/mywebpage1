@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects | Antima</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 50px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-radius: 0 0 20px 20px;
+    }
+
+    nav h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffdf6c;
+    }
+
+    /* Projects Section */
+    section {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    section h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    section p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 1.4rem;
+      color: #ffdf6c;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #f1f1f1;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 25px;
+      background: #ffdf6c;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff176;
+      box-shadow: 0 0 12px rgba(255, 223, 108, 0.8);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      font-size: 0.9rem;
+      margin-top: 50px;
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <h2>My Portfolio</h2>
+    <ul>
+      <li><a href="index1.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section>
+    <h1>My Projects</h1>
+    <p>Here are some of my best works showcasing my skills and creativity.</p>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="project.jpg" alt="Face Detection">
+        <h3>Face Detection App</h3>
+        <p>A Python + OpenCV based web app that detects faces in images using Flask backend.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="web.jpg" alt="Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my work.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+
+    </div>
+  </section>
+
+</body>
+</html>

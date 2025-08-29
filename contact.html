@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me - Antima Chaudhary</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #3c0676, #2575fc);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .contact-section {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(12px);
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 15px;
+      outline: none;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #eee;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      width: 100%;
+      background: #ff6a00;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.3);
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #ffcc70;
+      margin: 0 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>📩 Contact Me</h1>
+    <p>Let's Connect and Work Together!</p>
+  </header>
+
+  <!-- Contact Form -->
+  <div class="container">
+    <div class="contact-section">
+      <h2>Get in Touch</h2>
+      <form>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message 🚀</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>
